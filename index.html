@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator">
+        <h1>Calculadora de Pegada de Carbono</h1>
+        <h2>Caminhão Diesel</h2>
+
+        <form id="carbonForm" action="post">
+
+            <label for="fuel">Quantidade de Combustivel Usada (Litros):</label>
+            <input type="number" id="fuel" name="fuel" required step="0.01" min="0" value="0.00">
+    
+            <label for="distance">Distancia Percorrida (Km)</label>
+            <input type="number" id="distance" name="distance" required step="0.01" min="0" value="0.00">
+    
+            <button type="submit">Calcular</button>
+            <button id="startVoice">Falar</button>
+
+            <div id="result"></div>
+    
+    
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
